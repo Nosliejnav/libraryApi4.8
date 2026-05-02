@@ -1,0 +1,36 @@
+package com.vanja.libraryapi.controller.mappers;
+
+import com.vanja.libraryapi.controller.dto.UsuarioDTO;
+import com.vanja.libraryapi.model.Usuario;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-05-02T17:37:47-0300",
+    comments = "version: 1.6.0, compiler: javac, environment: Java 21.0.6 (Amazon.com Inc.)"
+)
+@Component
+public class UsuarioMapperImpl implements UsuarioMapper {
+
+    @Override
+    public Usuario toEntity(UsuarioDTO dto) {
+        if ( dto == null ) {
+            return null;
+        }
+
+        Usuario usuario = new Usuario();
+
+        usuario.setLogin( dto.login() );
+        usuario.setSenha( dto.senha() );
+        usuario.setEmail( dto.email() );
+        List<String> list = dto.roles();
+        if ( list != null ) {
+            usuario.setRoles( new ArrayList<String>( list ) );
+        }
+
+        return usuario;
+    }
+}
