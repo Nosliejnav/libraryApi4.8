@@ -1,0 +1,10 @@
+http://localhost:9090/oauth2/authorize?response_type=code&client_id=meu-client&redirect_uri=http%3A%2F%2Flocalhost%3A9090%2Fauthorized
+
+RESULTADO 1 = http://localhost:9090/authorized?code=ZEStoKpW0JNRDHqaprC66B-VQ8nBtOo9ZOgjhoAjjf9Nm-cVsBZcv7rnsn_QmDhB9BBo7N39paY3CkpKexknNFW0kVtmhx3yeMez8yh8pHtTSErc6r11ACK2RVC--78n
+
+RESULTADO 2 = Seu authorization code: I1ozTTwA8M28lXkyfr1OEOoMOTB75Q8tWL9cr9NSD54Fq9cXDlCtTAMOm60zTvkMZ8PmwzcyF16VKYt3lYRsEYoiyn7GCnu7LwBfOrEZ-XaQpmAI2heAYEu-Y9a9z1Ry
+
+
+reponse_type: code
+client_id: client_id
+redirect_uri: uri direcionamento (http%3A%2F%2Flocalhost%3A9090%2Fauthorized)
