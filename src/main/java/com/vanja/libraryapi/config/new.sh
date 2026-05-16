@@ -1,5 +1,5 @@
-#git add .
-#git commit -m "Utilizando Refresh Tokens para renovar sessão"
+git add .
+git commit -m "Conhecendo e customizando endpoits do Authorization Server"
 git checkout main
 git merge devel
 git push origin main
